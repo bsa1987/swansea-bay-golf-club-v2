@@ -3,7 +3,7 @@ import { Flag, Users, ShoppingBag, Utensils, Trophy, ChevronRight, Star, Calenda
 
 const HERO_IMG = '/hero-golf.png';
 const COURSE_IMG = 'https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
-const CLUBHOUSE_IMG = 'https://images.pexels.com/photos/1409796/pexels-photo-1409796.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
+const CLUBHOUSE_IMG = '/images/clubhouse.jpg';
 const MEMBERSHIP_IMG = 'https://images.pexels.com/photos/1174996/pexels-photo-1174996.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const PROSHOP_IMG = 'https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const SOCIETY_IMG = 'https://images.pexels.com/photos/1671766/pexels-photo-1671766.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
