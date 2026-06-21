@@ -4,8 +4,7 @@ import { Users, CheckCircle, ChevronDown, Star, Trophy, Clock } from 'lucide-rea
 import { Link } from 'react-router-dom';
 
 const HERO = 'https://images.pexels.com/photos/1174996/pexels-photo-1174996.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80';
-const MEMBER_IMG = 'https://images.pexels.com/photos/3001793/pexels-photo-3001793.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
-
+const MEMBER_IMG = '/membership.jpg';
 const plans = [
   {
     name: 'Full 7-Day',
