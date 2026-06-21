@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PageHero from '../components/PageHero';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 const HERO = 'https://images.pexels.com/photos/1426718/pexels-photo-1426718.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80';
 
@@ -37,6 +36,8 @@ const info = [
   },
 ];
 
+type Status = 'idle' | 'loading' | 'success' | 'error';
+
 export default function Contact() {
   const [form, setForm] = useState({
     name: '',
@@ -45,7 +46,7 @@ export default function Contact() {
     department: 'general',
     message: '',
   });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -56,15 +57,20 @@ export default function Contact() {
     e.preventDefault();
     setStatus('loading');
     setErrorMsg('');
+
     try {
-      const { error } = await supabase.from('contact_enquiries').insert({
-        name: form.name,
-        email: form.email,
-        phone: form.phone || null,
-        department: form.department,
-        message: form.message,
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
       });
-      if (error) throw error;
+
+      const data = await res.json() as { success?: boolean; error?: string };
+
+      if (!res.ok) {
+        throw new Error(data.error ?? 'Something went wrong. Please try again.');
+      }
+
       setStatus('success');
       setForm({ name: '', email: '', phone: '', department: 'general', message: '' });
     } catch (err: unknown) {
@@ -111,7 +117,7 @@ export default function Contact() {
             {status === 'success' ? (
               <div className="bg-green-50 border border-green-200 rounded-sm p-8 text-center">
                 <CheckCircle size={40} className="text-green-500 mx-auto mb-3" />
-                <h3 className="font-cinzel font-bold text-navy-800 tracking-wider mb-2">Message Received</h3>
+                <h3 className="font-cinzel font-bold text-navy-800 tracking-wider mb-2">Message Sent</h3>
                 <p className="text-gray-600 text-sm">
                   Thank you for getting in touch. A member of our team will respond to your enquiry within one working day.
                 </p>
