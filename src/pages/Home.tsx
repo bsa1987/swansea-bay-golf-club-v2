@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Flag, Users, ShoppingBag, Utensils, Trophy, ChevronRight, Star, Calendar } from 'lucide-react';
 
-const HERO_IMG = 'https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80';
+const HERO_IMG = '/hero-golf.png';
 const COURSE_IMG = 'https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const CLUBHOUSE_IMG = 'https://images.pexels.com/photos/1409796/pexels-photo-1409796.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const MEMBERSHIP_IMG = 'https://images.pexels.com/photos/1174996/pexels-photo-1174996.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
