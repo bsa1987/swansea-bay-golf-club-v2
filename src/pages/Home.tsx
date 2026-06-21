@@ -73,36 +73,44 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" />
 
         <div className="relative z-10 px-4">
-          {/* Club crest */}
-          <div className="flex justify-center mb-6">
-            <img
-              src="/logo.png"
-              alt="Swansea Bay Golf Club Crest"
-              className="h-20 w-20 object-contain drop-shadow-2xl"
-            />
-          </div>
-
           {/* Ornamental rule */}
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-px w-16 sm:w-24 bg-gradient-to-r from-transparent to-gold-400" />
-            <div className="w-2 h-2 bg-gold-400 rotate-45" />
-            <div className="h-px w-16 sm:w-24 bg-gradient-to-l from-transparent to-gold-400" />
-          </div>
+<div className="flex items-center justify-center gap-4 mb-6">
+  <div className="h-px w-16 sm:w-24 bg-gradient-to-r from-transparent to-gold-400" />
+  <div className="w-2 h-2 bg-gold-400 rotate-45" />
+  <div className="h-px w-16 sm:w-24 bg-gradient-to-l from-transparent to-gold-400" />
+</div>
 
-          <h1
-            className="font-cinzel font-black uppercase leading-none drop-shadow-2xl"
-            style={{
-              fontSize: 'clamp(2.5rem, 8vw, 6rem)',
-              letterSpacing: '0.08em',
-              background: 'linear-gradient(180deg, #fff 0%, #e8d08a 30%, #f5e8b8 55%, #c9a84c 80%, #a07830 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
-            }}
-          >
-            Swansea Bay<br />Golf Club
-          </h1>
+<div className="flex items-center justify-center gap-6 lg:gap-12 mb-2">
+  <img
+    src="/logo.png"
+    alt="Swansea Bay Golf Club Crest"
+    className="h-20 w-20 lg:h-32 lg:w-32 object-contain drop-shadow-2xl"
+  />
+
+  <h1
+    className="font-cinzel font-black uppercase leading-none drop-shadow-2xl"
+    style={{
+      fontSize: 'clamp(2.5rem, 8vw, 6rem)',
+      letterSpacing: '0.08em',
+      background:
+        'linear-gradient(180deg, #fff 0%, #e8d08a 30%, #f5e8b8 55%, #c9a84c 80%, #a07830 100%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text',
+      filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
+    }}
+  >
+    Swansea Bay
+    <br />
+    Golf Club
+  </h1>
+
+  <img
+    src="/logo.png"
+    alt="Swansea Bay Golf Club Crest"
+    className="h-20 w-20 lg:h-32 lg:w-32 object-contain drop-shadow-2xl"
+  />
+</div>
 
           <div className="flex items-center justify-center gap-4 mt-6 mb-5">
             <div className="h-px w-10 bg-gradient-to-r from-transparent to-gold-400" />
