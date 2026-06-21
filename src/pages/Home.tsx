@@ -3,10 +3,10 @@ import { Flag, Users, ShoppingBag, Utensils, Trophy, ChevronRight, Star, Calenda
 
 const HERO_IMG = '/hero-golf.png';
 const COURSE_IMG = 'https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
-const CLUBHOUSE_IMG = '/images/clubhouse.jpg';
+const CLUBHOUSE_IMG = '/Clubhouse.jpg';
 const MEMBERSHIP_IMG = 'https://images.pexels.com/photos/1174996/pexels-photo-1174996.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const PROSHOP_IMG = 'https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
-const SOCIETY_IMG = '/images/groupsociety.jpg';
+const SOCIETY_IMG = '/groupsociety.jpg';
 
 const features = [
   { icon: Flag, label: '18 Holes', desc: 'Championship Links' },
