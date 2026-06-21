@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const HERO = '/Clubhouse.jpg';
 const ROOM_IMG = 'https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const DINING_IMG = 'https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
-const BAR_IMG = 'https://images.pexels.com/photos/1267244/pexels-photo-1267244.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
+const BAR_IMG = '/bar.jpg';
 
 const facilities = [
   { icon: Wine, label: 'Fully Stocked Bar', desc: 'A wide selection of beers, wines, spirits and soft drinks. Our bar is open to all visitors daily.' },
