@@ -67,10 +67,10 @@ export default function Home() {
         style={{
           backgroundImage: `url(${HERO_IMG})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 30%',
+          backgroundPosition: 'center center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/10 to-black/30" />
 
         <div className="relative z-10 px-4">
           {/* Ornamental rule */}
