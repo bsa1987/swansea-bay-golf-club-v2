@@ -3,9 +3,9 @@ import { ShoppingBag, Tag, Wrench, BookOpen, Percent, ChevronRight } from 'lucid
 import { Link } from 'react-router-dom';
 
 const HERO = 'https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80';
-const CLUBS_IMG = 'https://images.pexels.com/photos/1325779/pexels-photo-1325779.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
-const LESSON_IMG = 'https://images.pexels.com/photos/1173277/pexels-photo-1173277.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
-const APPAREL_IMG = 'https://images.pexels.com/photos/1321908/pexels-photo-1321908.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
+const CLUBS_IMG = '/proshop.jpg';
+const LESSON_IMG = '/proshop.jpg';
+const APPAREL_IMG = '/proshop.jpg';
 
 const categories = [
   {
