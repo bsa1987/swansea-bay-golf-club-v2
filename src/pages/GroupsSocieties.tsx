@@ -2,7 +2,7 @@ import PageHero from '../components/PageHero';
 import { Users, Trophy, Calendar, CheckCircle, Star, Gift } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const HERO = 'https://images.pexels.com/photos/1671766/pexels-photo-1671766.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80';
+const HERO = '/groupsociety.jpg';
 const SOCIETY_IMG = 'https://images.pexels.com/photos/1174996/pexels-photo-1174996.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const CORPORATE_IMG = 'https://images.pexels.com/photos/1326946/pexels-photo-1326946.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 
