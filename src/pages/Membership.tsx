@@ -7,71 +7,169 @@ const HERO = 'https://images.pexels.com/photos/1174996/pexels-photo-1174996.jpeg
 const MEMBER_IMG = '/membership.jpg';
 const plans = [
   {
-    name: 'Full 7-Day',
-    price: '£850',
+    name: 'Full Playing Golfer',
+    price: '£830',
     period: 'per year',
     highlight: true,
     badge: 'Most Popular',
-    desc: 'Full access seven days a week',
+    desc: 'Unlimited golf and full membership privileges',
     perks: [
-      'Unlimited 7-day golf',
-      'Competition entry included',
-      'Handicap index maintained',
-      'Full clubhouse privileges',
-      'Guest vouchers (x4 per year)',
-      'Locker room access',
-      'Discounted pro shop prices',
-      'Club newsletter',
+      '7-day playing rights',
+      'Competition eligibility',
+      'Official handicap',
+      'Full clubhouse access',
+      'Member events',
     ],
   },
   {
-    name: '5-Day Membership',
-    price: '£650',
+    name: 'Country Membership',
+    price: '£500',
     period: 'per year',
     highlight: false,
-    desc: 'Monday to Friday access',
+    desc: 'For golfers living away from Swansea',
     perks: [
-      'Unlimited weekday golf (Mon–Fri)',
-      'Competition entry included',
-      'Handicap index maintained',
-      'Full clubhouse privileges',
-      'Guest vouchers (x2 per year)',
-      'Locker room access',
-      'Discounted pro shop prices',
-      'Club newsletter',
-    ],
-  },
-  {
-    name: 'Country Member',
-    price: '£350',
-    period: 'per year',
-    highlight: false,
-    desc: 'For those who live 30+ miles away',
-    perks: [
-      '12 rounds per year',
-      'Competition entry included',
-      'Handicap index maintained',
-      'Clubhouse privileges when visiting',
-      'Discounted pro shop prices',
-      'Club newsletter',
-    ],
-  },
-  {
-    name: 'Junior Membership',
-    price: '£150',
-    period: 'per year',
-    highlight: false,
-    desc: 'For golfers under 18 years of age',
-    perks: [
-      'Unlimited junior golf',
-      'Junior competitions',
-      'Handicap index maintained',
+      'Reduced annual fee',
+      'Official handicap',
       'Clubhouse access',
-      'Junior coaching events',
-      'Club newsletter',
+      'Competition eligibility',
+      'Member events',
+    ],
+  },
+  {
+    name: 'Husband & Wife',
+    price: '£1540',
+    period: 'per year',
+    highlight: false,
+    desc: 'Joint membership package',
+    perks: [
+      'Two full memberships',
+      'Competition eligibility',
+      'Official handicaps',
+      'Clubhouse access',
+      'Member events',
+    ],
+  },
+  {
+    name: 'Intermediate (22–25)',
+    price: '£440',
+    period: 'per year',
+    highlight: false,
+    desc: 'Young adult membership',
+    perks: [
+      'Full playing rights',
+      'Competition eligibility',
+      'Official handicap',
+      'Clubhouse access',
+      'Member events',
+    ],
+  },
+  {
+    name: 'Intermediate (19–21)',
+    price: '£250',
+    period: 'per year',
+    highlight: false,
+    desc: 'Young adult membership',
+    perks: [
+      'Full playing rights',
+      'Competition eligibility',
+      'Official handicap',
+      'Clubhouse access',
+      'Member events',
+    ],
+  },
+  {
+    name: 'Junior (14–18)',
+    price: '£180',
+    period: 'per year',
+    highlight: false,
+    desc: 'Junior membership',
+    perks: [
+      'Junior competitions',
+      'Official handicap',
+      'Clubhouse access',
+      'Coaching opportunities',
+      'Member events',
+    ],
+  },
+  {
+    name: 'Junior (Under 14)',
+    price: '£105',
+    period: 'per year',
+    highlight: false,
+    desc: 'Junior membership',
+    perks: [
+      'Junior competitions',
+      'Official handicap',
+      'Clubhouse access',
+      'Coaching opportunities',
+      'Academy option available (£60)',
+    ],
+  },
+  {
+    name: 'Senior (65–69)',
+    price: '£780',
+    period: 'per year',
+    highlight: false,
+    desc: '15 years membership required',
+    perks: [
+      'Full playing rights',
+      'Competition eligibility',
+      'Official handicap',
+      'Clubhouse access',
+      'Member events',
+    ],
+  },
+  {
+    name: 'Senior (70–79)',
+    price: '£680',
+    period: 'per year',
+    highlight: false,
+    desc: 'Reduced senior membership',
+    perks: [
+      'Full playing rights',
+      'Competition eligibility',
+      'Official handicap',
+      'Clubhouse access',
+      'Member events',
+    ],
+  },
+  {
+    name: 'Senior (80+)',
+    price: '£580',
+    period: 'per year',
+    highlight: false,
+    desc: 'Reduced senior membership',
+    perks: [
+      'Full playing rights',
+      'Competition eligibility',
+      'Official handicap',
+      'Clubhouse access',
+      'Member events',
     ],
   },
 ];
+
+<section className="pb-16 px-4 sm:px-6">
+  <div className="max-w-4xl mx-auto bg-white border border-gold-200 shadow-md p-8 rounded-sm">
+    <h3 className="font-display font-bold text-2xl text-navy-800 mb-6">
+      Additional Fees & Information
+    </h3>
+
+    <div className="grid md:grid-cols-2 gap-6 text-gray-700">
+      <div>
+        <p><strong>House Membership:</strong> £30</p>
+        <p><strong>Locker Rental:</strong> £30</p>
+        <p><strong>Family Entry Fee:</strong> £100</p>
+      </div>
+
+      <div>
+        <p><strong>Academy Under 14:</strong> £60</p>
+        <p><strong>Academy 14–18:</strong> £110</p>
+        <p><strong>Entry Fee:</strong> £100 where applicable</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 const benefits = [
   { icon: Trophy, title: 'Competitions', desc: 'Enter weekly club competitions and team events year-round.' },
@@ -116,7 +214,7 @@ export default function Membership() {
 
       {/* Plans */}
       <section className="pb-16 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
           {plans.map((plan) => (
             <div
               key={plan.name}
