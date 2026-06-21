@@ -29,28 +29,52 @@ const roomFeatures = [
 
 const localRules = [
   {
-    title: 'Out of Bounds',
-    content: 'Out of Bounds is defined by white stakes and/or fences throughout the course. The boundary fence along the left of the 1st hole is out of bounds. All areas beyond the course boundary are out of bounds.',
+    title: '1. Out of Bounds',
+    content: 'Out of bounds is defined by white stakes and boundary fences. A ball beyond boundary fences, white marker posts or designated course boundaries is out of bounds. Rule 18.2b applies with stroke-and-distance relief.',
   },
   {
-    title: 'Penalty Areas',
-    content: 'All water features and ditches on the course are defined as penalty areas (yellow stakes). Players may play from within the penalty area, take a one-stroke penalty and drop outside, or replay from the original position.',
+    title: '2. Penalty Areas',
+    content: 'The inlet on the left of the 9th fairway and those across the 3rd and 16th fairways and in front of the 18th tee are yellow penalty areas. All other ditches are red penalty areas. Rule 17 applies. Provisional balls may be played when the location of the original ball in a penalty area is uncertain.',
   },
   {
-    title: 'Fixed Sprinkler Heads',
-    content: 'Fixed sprinkler heads are treated as immovable obstructions throughout the course. Relief without penalty may be taken within one club-length of the nearest point of complete relief, no nearer the hole.',
+    title: '3. Fixed Sprinkler Heads',
+    content: 'Relief may be taken under Rule 16.1. Additional relief is available when sprinkler heads are within two club lengths of both the putting green and the ball and interfere with the line of play.',
   },
   {
-    title: 'Winter Rules (Preferred Lies)',
-    content: 'When in operation, the ball may be lifted, cleaned and placed within 15cm (6 inches) of its original position on the fairway, no nearer the hole. This rule applies from 1 October to 31 March or when announced by the committee.',
+    title: '4. Winter Rules (Preferred Lies)',
+    content: 'From 1 October to 31 March, a ball on fairway-height grass or shorter may be lifted, cleaned and placed within 6 inches of its original position, no nearer the hole.',
   },
   {
-    title: 'Immovable Obstructions',
-    content: 'All artificial surfaces, paths, roads, and fixed man-made objects are immovable obstructions. Players are entitled to free relief from immovable obstructions when the obstruction interferes with the stance or the area of intended swing.',
+    title: '5. Immovable Obstructions',
+    content: 'Paths, tee signs, yardage markers, benches, ball washers, marker posts, bells and bins are immovable obstructions. Free relief is available under Rule 16.1.',
   },
   {
-    title: 'Roads and Paths',
-    content: 'All tarmac and paved paths on the course are immovable obstructions and free relief applies. Ground under repair stakes (blue stakes) indicate areas where free relief must be taken.',
+    title: '6. Material Piled for Removal',
+    content: 'Material clearly piled for removal is Ground Under Repair. Relief is available under Rule 16.1b. Material not piled for removal is a loose impediment under Rule 15.1a.',
+  },
+  {
+    title: '7. Aeration Holes',
+    content: 'Relief is available when a ball lies in or touches an aeration hole in the general area or on the putting green. Penalty for breach: Match Play – loss of hole; Stroke Play – two strokes.',
+  },
+  {
+    title: '8. Seams of Cut Turf',
+    content: 'Relief may be taken when a ball lies in or touches a seam of cut turf or the seam interferes with the intended swing. Rule 16.1 applies.',
+  },
+  {
+    title: '9. Cracks in Ground',
+    content: 'Cracks in fairway-height areas or shorter are Ground Under Repair. Free relief is available under Rule 16.1b.',
+  },
+  {
+    title: '10. Roads and Paths',
+    content: 'All roads and paths, even if not artificially surfaced, are treated as immovable obstructions and free relief is available under Rule 16.1.',
+  },
+  {
+    title: '11. Bunker Renovation',
+    content: 'Any bunker undergoing renovation is treated as Ground Under Repair. Relief is available under Rule 16.1b.',
+  },
+  {
+    title: 'General Rules',
+    content: 'Official starting places are the 1st and 6th tees only (or as directed). Players must play in scorecard order. Match priorities apply for club teams, competitions and friendly matches. Practice restrictions also apply.',
   },
 ];
 
