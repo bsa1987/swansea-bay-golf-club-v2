@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PageHero from '../components/PageHero';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 
-const HERO = 'https://images.pexels.com/photos/1426718/pexels-photo-1426718.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80';
+const HERO = '/Clubhouse.jpg';
 
 const departments = [
   { label: 'General Enquiry', value: 'general' },
