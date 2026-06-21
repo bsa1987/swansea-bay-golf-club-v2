@@ -3,7 +3,7 @@ import PageHero from '../components/PageHero';
 import { Home, Wine, Utensils, Tv, Coffee, Sofa, Users, ChevronDown, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const HERO = 'https://images.pexels.com/photos/1409796/pexels-photo-1409796.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80';
+const HERO = '/Clubhouse.jpg';
 const ROOM_IMG = 'https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const DINING_IMG = 'https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 const BAR_IMG = 'https://images.pexels.com/photos/1267244/pexels-photo-1267244.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
