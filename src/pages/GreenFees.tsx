@@ -141,3 +141,54 @@ export default function GreenFees() {
     </div>
   </div>
 </section>
+
+      {/* What's included + image */}
+      <section className="py-16 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+          <div className="lg:w-1/2">
+            <p className="font-cinzel text-gold-600 text-xs tracking-[0.3em] uppercase mb-2">Included</p>
+            <h3 className="font-display font-bold text-3xl text-navy-800 mb-3">What's Included</h3>
+            <div className="section-divider-left mb-5" />
+            <ul className="space-y-3">
+              {included.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-gray-600">
+                  <CheckCircle size={16} className="text-gold-500 flex-shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8 p-4 bg-gold-50 border border-gold-200 rounded-sm">
+              <p className="text-sm text-gray-600 font-cinzel tracking-wide">
+                <span className="text-gold-700 font-semibold">Buggy Hire:</span> £20 per round (subject to availability)
+              </p>
+            </div>
+          </div>
+          <div className="lg:w-1/2">
+            <img
+              src={COURSE2}
+              alt="Golf Course"
+              className="w-full h-72 object-cover shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Book CTA */}
+      <section className="py-14 bg-navy-800 text-center px-4">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="h-px w-8 bg-gold-500" />
+          <Calendar size={14} className="text-gold-500" />
+          <div className="h-px w-8 bg-gold-500" />
+        </div>
+        <h3 className="font-cinzel font-bold text-2xl text-white tracking-wider mb-3">Book Your Tee Time</h3>
+        <p className="text-white/70 mb-6 max-w-lg mx-auto">
+          Call us or email to reserve your preferred tee time. Group and society bookings are also available.
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="tel:+441792401989" className="btn-gold">Call 01792 401 989</a>
+          <Link to="/groups-societies" className="btn-crimson">Group Packages</Link>
+        </div>
+      </section>
+    </div>
+  );
+}
