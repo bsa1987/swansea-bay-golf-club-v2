@@ -82,10 +82,10 @@ export default function Home() {
 
 <div className="flex items-center justify-center gap-6 lg:gap-12 mb-2">
   <img
-  src="/logo.png"
-  alt="Swansea Bay Golf Club Crest"
-  className="h-28 w-28 lg:h-44 lg:w-44 object-contain drop-shadow-2xl flex-shrink-0"
-/>
+    src="/logo.png"
+    alt="Swansea Bay Golf Club Crest"
+    className="h-32 w-32 lg:h-48 lg:w-48 object-contain drop-shadow-2xl flex-shrink-0"
+  />
 
   <h1
     className="font-cinzel font-black uppercase leading-none drop-shadow-2xl"
@@ -108,7 +108,7 @@ export default function Home() {
   <img
     src="/logo.png"
     alt="Swansea Bay Golf Club Crest"
-    className="h-20 w-20 lg:h-32 lg:w-32 object-contain drop-shadow-2xl"
+    className="h-32 w-32 lg:h-48 lg:w-48 object-contain drop-shadow-2xl flex-shrink-0"
   />
 </div>
 
