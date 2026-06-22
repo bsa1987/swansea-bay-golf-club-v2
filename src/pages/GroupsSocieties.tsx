@@ -7,55 +7,249 @@ const SOCIETY_IMG = 'https://images.pexels.com/photos/1174996/pexels-photo-11749
 const CORPORATE_IMG = 'https://images.pexels.com/photos/1326946/pexels-photo-1326946.jpeg?auto=compress&cs=tinysrgb&w=900&q=80';
 
 const packages = [
+  // WINTER WEEKDAYS
+
   {
-    name: 'Society Package A',
-    price: '£30',
-    per: 'per person',
-    min: 'Min. 12 players',
+    name: 'Winter Weekday Golf Only',
+    price: '£25 / £24 / £23',
+    per: 'Up to 12 / 20 / 20+',
+    min: '1 Oct 2025 - 31 Mar 2026',
     highlight: false,
     includes: [
-      '18 holes on our championship course',
-      'Tea/coffee and bacon rolls on arrival',
-      'Two-course clubhouse lunch',
-      'Prizes for winner, runner-up & nearest the pin',
-      'Welcome drink on arrival',
-      'Scorecard and pencils provided',
+      '18 Holes Golf',
+      'Minimum 6 players',
+      '£25 up to 12 players',
+      '£24 up to 20 players',
+      '£23 over 20 players',
     ],
   },
+
   {
-    name: 'Society Package B',
-    price: '£42',
+    name: 'Winter Weekday Coffee & Golf',
+    price: '£30 / £29 / £28',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Winter Package',
+    highlight: true,
+    includes: [
+      'Coffee & Bacon Roll',
+      '18 Holes Golf',
+      'Minimum 6 players',
+      'Organiser free over 20 players',
+    ],
+  },
+
+  {
+    name: 'Winter Weekday 1 Course Meal',
+    price: '£37 / £36 / £35',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Winter Package',
+    highlight: false,
+    includes: [
+      'Coffee & Bacon Roll',
+      '18 Holes Golf',
+      '1 Course Meal',
+      'Deduct £3 without breakfast',
+    ],
+  },
+
+  {
+    name: 'Winter Weekday 2 Course Meal',
+    price: '£41 / £40 / £39',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Winter Package',
+    highlight: false,
+    includes: [
+      'Coffee & Bacon Roll',
+      '18 Holes Golf',
+      '2 Course Meal',
+      'Deduct £3 without breakfast',
+    ],
+  },
+
+  {
+    name: 'Winter Extra 10 Holes',
+    price: '£12',
     per: 'per person',
-    min: 'Min. 16 players',
+    min: 'Winter Package',
+    highlight: false,
+    includes: [
+      'Additional 10 Holes',
+      'Available with society booking',
+    ],
+  },
+
+  // WINTER WEEKENDS
+
+  {
+    name: 'Winter Weekend Golf Only',
+    price: '£40 / £39 / £38',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Weekends & Bank Holidays',
+    highlight: false,
+    includes: [
+      '18 Holes Golf',
+      'Minimum 6 players',
+      'Weekend rate',
+    ],
+  },
+
+  {
+    name: 'Winter Weekend Coffee & Golf',
+    price: '£45 / £44 / £43',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Weekends & Bank Holidays',
+    highlight: true,
+    badge: 'Popular',
+    includes: [
+      'Coffee & Bacon Roll',
+      '18 Holes Golf',
+      'Weekend package',
+    ],
+  },
+
+  {
+    name: 'Winter Weekend 1 Course Meal',
+    price: '£52 / £51 / £50',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Weekends & Bank Holidays',
+    highlight: false,
+    includes: [
+      'Breakfast',
+      '18 Holes Golf',
+      '1 Course Meal',
+    ],
+  },
+
+  {
+    name: 'Winter Weekend 2 Course Meal',
+    price: '£56 / £55 / £54',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Weekends & Bank Holidays',
+    highlight: false,
+    includes: [
+      'Breakfast',
+      '18 Holes Golf',
+      '2 Course Meal',
+    ],
+  },
+
+  // SUMMER
+
+  {
+    name: 'Summer Golf Only',
+    price: '£30 / £29 / £28',
+    per: 'Up to 12 / 20 / 20+',
+    min: '1 Apr 2026 - 30 Sept 2026',
+    highlight: false,
+    includes: [
+      '18 Holes Golf',
+      'Minimum 6 players',
+    ],
+  },
+
+  {
+    name: 'Summer Coffee & Golf',
+    price: '£35 / £34 / £33',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Summer Package',
     highlight: true,
     badge: 'Best Value',
     includes: [
-      '18 holes on our championship course',
-      'Tea/coffee and pastries on arrival',
-      'Three-course clubhouse dinner',
-      'Prizes for top 3 finishers & nearest the pin',
-      'Welcome Prosecco reception',
-      'Personalised scorecards',
-      'Buggy available at reduced rate',
-      'Dedicated event coordinator',
+      'Coffee & Bacon Roll',
+      '18 Holes Golf',
+      'Organiser free over 20 players',
     ],
   },
+
   {
-    name: 'Corporate Day',
-    price: '£55',
-    per: 'per person',
-    min: 'Min. 20 players',
+    name: 'Summer 1 Course Meal',
+    price: '£42 / £41 / £40',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Summer Package',
     highlight: false,
     includes: [
-      '18 holes on our championship course',
-      'Full branded event theming',
-      'Corporate lunch or dinner',
-      'Branding opportunities on course',
-      'Prize presentation with trophies',
-      'Welcome pack for all players',
-      'Dedicated event manager',
-      'Photographer available (extra)',
+      'Breakfast',
+      '18 Holes Golf',
+      '1 Course Meal',
     ],
+  },
+
+  {
+    name: 'Summer 2 Course Meal',
+    price: '£46 / £45 / £44',
+    per: 'Up to 12 / 20 / 20+',
+    min: 'Summer Package',
+    highlight: false,
+    includes: [
+      'Breakfast',
+      '18 Holes Golf',
+      '2 Course Meal',
+    ],
+  },
+
+  {
+    name: 'Summer Extra 10 Holes',
+    price: '£15',
+    per: 'per person',
+    min: 'Summer Package',
+    highlight: false,
+    includes: ['Additional 10 Holes'],
+  },
+
+  {
+    name: 'Summer Extra 18 Holes',
+    price: '£20',
+    per: 'per person',
+    min: 'Summer Package',
+    highlight: false,
+    includes: ['Additional 18 Holes'],
+  },
+
+  {
+    name: 'Summer Twilight Golf',
+    price: '£20',
+    per: 'after 4pm',
+    min: 'Summer Package',
+    highlight: false,
+    includes: ['Twilight Golf', 'After 4pm'],
+  },
+
+  // BUGGY HIRE
+
+  {
+    name: 'Buggy Hire - Visitors',
+    price: '£30',
+    per: 'per buggy',
+    min: 'Equipment Hire',
+    highlight: false,
+    includes: ['Visitor Rate'],
+  },
+
+  {
+    name: 'Buggy Hire - Members',
+    price: '£15',
+    per: 'per buggy',
+    min: 'Equipment Hire',
+    highlight: false,
+    includes: ['Member Rate'],
+  },
+
+  {
+    name: 'Single Member Buggy',
+    price: '£12',
+    per: 'per buggy',
+    min: 'Equipment Hire',
+    highlight: false,
+    includes: ['Single Member Rate'],
+  },
+
+  {
+    name: 'Trolley Hire',
+    price: '£3',
+    per: 'each',
+    min: 'Equipment Hire',
+    highlight: false,
+    includes: ['Pull Trolley Hire'],
   },
 ];
 
@@ -95,7 +289,7 @@ export default function GroupsSocieties() {
 
       {/* Packages */}
       <section className="pb-16 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {packages.map((pkg) => (
             <div
               key={pkg.name}
