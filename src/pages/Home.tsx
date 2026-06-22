@@ -84,7 +84,7 @@ export default function Home() {
   <img
   src="/logo.png"
   alt="Swansea Bay Golf Club Crest"
-  className="h-28 w-28 lg:h-44 lg:w-44 object-contain drop-shadow-2xl"
+  className="h-28 w-28 lg:h-44 lg:w-44 object-contain drop-shadow-2xl flex-shrink-0"
 />
 
   <h1
